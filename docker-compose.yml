@@ -1,0 +1,11 @@
+version: "3.7"
+services:
+  msql:
+    image: mcr.microsoft.com/mssql/server:2017-latest-ubuntu
+    environment:
+      ACCEPT_EULA=Y
+      SA_PASSWORD=teste
+      MSSQL_PID=
+    ports:
+     - "1433:1433"
+    
