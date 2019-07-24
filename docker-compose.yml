@@ -5,7 +5,12 @@ services:
     environment:
       - ACCEPT_EULA=Y
       - SA_PASSWORD=teste
-      #- MSSQL_PID=
+      #- MSSQL_PID=tu viu isso <--- default
     ports:
       - "1433:1433"
-    
+    volumes:
+      - msql:/tmp
+volumes:
+  msql:
+
+
